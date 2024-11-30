@@ -210,9 +210,9 @@ local function go_to_bookmark(bookmark)
 
 	vim.api.nvim_win_set_cursor(0, { bookmark.line, bookmark.col })
 
-	if bookmark.line < top_line or bookmark.line >= top_line + win_height then
+    -- if bookmark.line < top_line or bookmark.line >= top_line + win_height then
 		vim.cmd("normal! zz")
-	end
+    -- end
 end
 
 local function toggle_delete_mode(action_buffer)
